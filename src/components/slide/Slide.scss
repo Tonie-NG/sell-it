@@ -1,0 +1,23 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  padding: 6rem 0;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    max-width: 75rem;
+    position: relative;
+
+    .carousel-prev,
+    .carousel-next {
+      width: 3rem;
+      height: 3rem;
+      background-color: lightgray;
+
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.mycourses {
+  display: flex;
+  justify-content: center;
+  .container {
+    width: 100%;
+    max-width: 75rem;
+    padding: 3rem 0;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-weight: 500;
+        font-size: 1.8rem;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        border-radius: 0.4rem;
+        border: 1px solid transparent;
+        cursor: pointer;
+        background-color: #1dbf73;
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+
+    table {
+      margin-top: 3rem;
+      width: 100%;
+      text-align: center;
+      tr {
+        height: 3rem;
+
+        th {
+          text-align: center;
+          background-color: #eef0f2;
+        }
+        td {
+          .icon {
+            height: 5rem;
+            object-fit: cover;
+          }
+        }
+        &:nth-child(even) {
+          background-color: rgb(221, 221, 221);
+        }
+      }
+    }
+  }
+}

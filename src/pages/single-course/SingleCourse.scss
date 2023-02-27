@@ -1,0 +1,235 @@
+.singlecourse {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 100%;
+    max-width: 75rem;
+    padding: 1.875rem 0;
+    display: flex;
+
+    .left {
+      flex: 2.5;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      padding: 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .user {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.625rem;
+
+        .pp {
+          height: 2rem;
+          width: 2rem;
+          border-radius: 50%;
+          background-color: black;
+
+          img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+
+        span {
+          font-size: 0.875rem;
+          font-weight: 500;
+        }
+
+        .stars {
+          display: flex;
+          align-items: center;
+          gap: 0.313rem;
+
+          span: {
+            font-size: 0.875rem;
+          }
+        }
+      }
+
+      .singleslider {
+        img {
+          max-height: 30rem;
+          object-fit: contain;
+        }
+      }
+
+      h2 {
+        font-weight: 500;
+      }
+
+      p {
+        font-weight: 400;
+        line-height: 2rem;
+      }
+
+      .reviews {
+        margin-top: 2.5rem;
+        .item {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+
+          p {
+            margin-bottom: 1.5rem;
+          }
+          .stars {
+            margin-bottom: 1.5rem;
+          }
+
+          .helpful {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            span {
+              font-weight: 600;
+            }
+
+            .yes,
+            .no {
+              display: flex;
+              gap: 0.5rem;
+              align-items: center;
+              cursor: pointer;
+            }
+          }
+          .user {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            .pp {
+              height: 2rem;
+              width: 2rem;
+              border-radius: 50%;
+              background-color: black;
+
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              }
+            }
+            .info {
+              display: flex;
+              flex-direction: column;
+
+              .name {
+                font-weight: 500;
+              }
+            }
+          }
+        }
+      }
+
+      .seller {
+        margin-top: 2.5rem;
+        h2 {
+          font-weight: 500;
+          margin-bottom: 2rem;
+        }
+        .user {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .box {
+            border: 1px solid lightgray;
+            padding: 1.5rem;
+            border-radius: 0.8rem;
+
+            p {
+              line-height: 2rem;
+            }
+          }
+
+          .stats {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            .contact {
+              display: flex;
+              flex-direction: column;
+              gap: 0.5rem;
+            }
+            .pp {
+              height: 5rem;
+              width: 5rem;
+              border-radius: 50%;
+              background-color: black;
+
+              img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right {
+      flex: 1;
+      border: 1px solid lightgray;
+      height: max-content;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      position: sticky;
+      top: 9rem;
+      border-radius: 0.5rem;
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+          font-weight: 300;
+        }
+
+        h3 {
+          font-weight: 500;
+        }
+      }
+      p {
+        color: rgb(51, 51, 51);
+      }
+
+      .details {
+        display: flex;
+        gap: 0.8rem;
+        flex-direction: column;
+
+        .features {
+          display: flex;
+          gap: 0.6rem;
+          align-items: center;
+        }
+      }
+
+      button {
+        color: white;
+        background-color: #1dbf73;
+        border: none;
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}

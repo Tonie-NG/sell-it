@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: #eef0f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: hsl(230, 12%, 90%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(230, 12%, 80%);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(230, 8%, 45%);
+}

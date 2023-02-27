@@ -1,0 +1,59 @@
+.courses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 75rem;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      span {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.9rem;
+
+        .filter,
+        .sort {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+
+          select {
+            width: 8rem;
+            border-radius: 0.2rem;
+
+            .option {
+              padding: 2rem;
+            }
+          }
+
+          select:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .course-div {
+      margin-top: 4rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      // justify-content: center;
+    }
+  }
+}
